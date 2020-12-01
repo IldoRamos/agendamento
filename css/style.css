@@ -1,0 +1,265 @@
+body{
+	user-select: none;
+	margin: 0;
+	padding: 0;	
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1;}
+}
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+#intro {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#drop{
+  transition: 0.1s;
+}
+#drop:hover{
+  background-color: grey;
+}
+#myNav{
+  display: none;
+}
+.fadeIn {
+	animation: fadeIn 0.3s ease-in ;
+}
+.index-prof{
+	background-color: rgb(40,40,40);
+}
+
+.thumb-size{
+	width: 250px;
+	height: 200px;
+}
+p{
+	color: #fff;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 13px;
+}
+.card{
+	background-color: #fff;
+	
+}
+#bg-collapse{
+  background-color: rgb(60,60,60);
+}
+
+.card-title{
+	font-weight: bold;
+}
+#text{
+	color: rgb(80,80,80);
+}
+.h-banner{
+	font-size: 60px;
+}
+.fav-icon{
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	float: right;
+	filter: grayscale(80%);
+}
+#card-h{
+	transition: 0.2s;
+}
+#card-h:hover{
+	filter: brightness(105%);
+	transition: 0.2s;
+}
+.edit-icon{
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	float: right;
+	filter: brightness(60%);
+	transition: 0.2s;
+}
+.edit-icon:hover{
+	filter: brightness(100%);
+	transition: 0.2s;
+}
+#materialLoginForm:focus{
+	border-color: green;
+}
+#label-color{
+	color: gray;
+}
+.btn-index{
+	float: right;
+}
+.nav-ico{
+	float: right;
+}
+#dd-item:hover{
+	transition: 0.0s;
+	background-color: none;
+}
+#dd-item-sair:hover{
+	transition: 0.0s;
+	background-color: rgb(255,53,71);
+}
+.brand-icon{
+	width: 80px;
+	height: 50px;
+}
+.brand-icon-2{
+	width: 120px;
+	height: 30px;
+}
+.nav-link{
+	font-weight: bold;
+}
+.close{
+	width: 50px;
+	height: 50px;
+	margin-left: 790px;
+}
+.span-close{
+	float: right;
+	width: 50px;
+	color: #fff;
+	font-size: 50px;
+}
+.modal-iframe{
+	height: 400px;
+	width: 100%;
+}
+.footer-up{
+	height: 200px;
+	background-color: #606060;
+	margin-top: 200px;
+	background-attachment: fixed;
+}
+.footer-down{
+	background-color: #404040;
+	color: #fff;
+}
+.logo-footer{
+	float: right;
+}
+.text-footer{
+	text-align: left;
+	position: absolute;
+}
+
+.top-nav-collapse {
+  background-color: rgb(20,20,20);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(20,20,20);
+  overflow-x: hidden;
+  transition: 0.3s;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 60px;
+}
+.navbar-brand-mobile{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: rgb(20,20,20);
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+  display: block;
+  }
+  .btn-index{
+    width: 100%;
+  }
+  #myNav{
+    display: initial;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: rgb(20,20,20);
+  }
+  .nav-lg{
+    display: none;
+  }
+  .btn-menu{
+    display: block;
+    float: left;
+  }
+  .navbar-brand{
+    display: none;
+  }
+  .navbar-brand-mobile{
+  display: block;
+  }
+  .btn-index{
+    width: 100%;
+  }
+  #myNav{
+    display: initial;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
