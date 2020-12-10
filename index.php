@@ -10,8 +10,10 @@ and open the template in the editor.
         <title>agendamento</title>
     </head>
     <body>
+    	
+
         <?php
-            include'view/agendar.php';
+            include'view/agendamento.php';
         ?>
     </body>
 </html>
